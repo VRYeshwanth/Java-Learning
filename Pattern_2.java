@@ -1,12 +1,14 @@
 import java.util.Scanner;
-public class Pattern_2 {
-    public static void main(String[] args) {
-        @SuppressWarnings("resource")
+public class Pattern_2
+{
+    public static void main(String[] args)
+    {
         Scanner sc = new Scanner(System.in);
         while(true)
         {
             System.out.print("Enter a number from 1 to 10 display a random number pattern : ");
             int n = sc.nextInt();
+            sc.close();
             switch (n) {
                 case 1:
                     for(int i = 1; i <= 5; i++)
@@ -89,7 +91,7 @@ public class Pattern_2 {
                 }
                 break;
 
-                case 10:
+                case 10: //Floyd's Triangle
                 int counter = 1;
                 for(int i = 1; i <= 5; i++)
                 {

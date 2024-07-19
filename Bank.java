@@ -33,7 +33,6 @@ public class Bank
 {
     public static void main(String[] args)
     {
-        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to our bank");
         System.out.print("How many accounts do you want to open : ");
@@ -62,5 +61,6 @@ public class Bank
             System.out.println("----------------------------");
         }
         System.out.println("---------------------------------------------");
+        sc.close();
     }
 }

@@ -16,11 +16,11 @@ public class StringReverse
     }
     public static void main(String args[])
     {
-        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a word : ");
         String word = sc.nextLine();
         String reverse = reverseString(word);
         System.out.println("Reverse = "+reverse);
+        sc.close();
     }
 }

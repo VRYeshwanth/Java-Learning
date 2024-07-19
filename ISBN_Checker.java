@@ -78,10 +78,10 @@ public class ISBN_Checker
 
     public static void main(String[] args)
     {
-        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter an ISBN number : ");
         String ISBN = sc.nextLine();
         checkValidISBN(ISBN);
+        sc.close();
     }
 }

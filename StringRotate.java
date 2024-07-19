@@ -23,12 +23,12 @@ public class StringRotate
     }
     public static void main(String args[])
     {
-        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a word : ");
         String word = sc.nextLine();
         System.out.println("Enter the number of rotations : ");
         int n = sc.nextInt();
         rotateString(word, n);
+        sc.close();
     }
 }

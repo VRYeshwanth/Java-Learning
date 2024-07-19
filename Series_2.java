@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Series_2 {
-    public static void main(String[] args) {
-        @SuppressWarnings("resource")
+    public static void main(String[] args)
+    {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number from 1 - 3 to display a random series : ");
         int ch = sc.nextInt();
@@ -56,5 +56,6 @@ public class Series_2 {
             System.out.println("Invalid Choice");
             System.exit(0);
         }
+        sc.close();
     }
 }

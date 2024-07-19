@@ -18,11 +18,10 @@ public class Krishnamurthy_Number extends Factorial
     }
     public static void main(String args[])
     {
-        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number : ");
         int n = sc.nextInt();
-
+        sc.close();
         checkKrishnamurthyNumber(n);
     }
 }

@@ -48,11 +48,10 @@ public class Evil_Number
     }
     public static void main(String[] args)
     {
-        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number : ");
         long num = sc.nextLong();
-
+        sc.close();
         checkEvil(num);
     }
 }

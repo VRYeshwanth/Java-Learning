@@ -13,8 +13,8 @@ public class Reverse {
         for(int num : arr)
             System.out.println(num);
     }
-    public static void main(String[] args) {
-        @SuppressWarnings("resource")
+    public static void main(String[] args)
+    {
         Scanner sc = new Scanner(System.in);
         System.out.println("How many values : ");
         int n = sc.nextInt();
@@ -24,5 +24,6 @@ public class Reverse {
             arr[i] = sc.nextInt();
         
         reverseArray(arr);
+        sc.close();
     }
 }

@@ -3,7 +3,6 @@ public class Matrix_Generator
 {
     public static void main(String[] args)
     {
-        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of rows : ");
         int rows = sc.nextInt();
@@ -20,6 +19,7 @@ public class Matrix_Generator
                 System.out.print(ele+ " ");
             System.out.println();
         }
+        sc.close();
     }
 
     public static int[][] generate(int r, int c)

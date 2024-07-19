@@ -3,7 +3,6 @@ public class Series_1
 {
     public static void main(String args[])
     {
-        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("This program prints the pattern (1+2/1*2) + (1+2+3/1*2*3) + ..... + (1+2+3+.....+n/1*2*3*.....*n)");
         System.out.print("Enter the value of n : ");
@@ -23,5 +22,6 @@ public class Series_1
             total_sum += s/p;
         }
         System.out.println("Sum = "+(total_sum-1));
+        sc.close();
     }
 }

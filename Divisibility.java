@@ -3,10 +3,10 @@ public class Divisibility
 {
     public static void main(String[] args)
     {
-        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number : ");
         long num = sc.nextLong();
+        sc.close();
         System.out.println();
         System.out.println(num+ " / 2 = " +check_2(num));
         System.out.println(num+ " / 3 = " +check_3(num));

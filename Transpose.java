@@ -16,7 +16,6 @@ public class Transpose extends Matrix
     }
     public static void main(String args[])
     {
-        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         int arr[][];
         int r,c = 0;
@@ -34,5 +33,6 @@ public class Transpose extends Matrix
         }
         System.out.println("Result :- \n");
         transposeMatrix(arr, r, c);
+        sc.close();
     }
 }

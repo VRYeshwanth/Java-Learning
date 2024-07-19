@@ -68,7 +68,6 @@ public class Matrix {
         displayMatrix(c);
     }
     public static void main(String[] args) {
-        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter 1 to add two matrices");
         System.out.println("Enter 2 to subtract two matrices");
@@ -76,6 +75,7 @@ public class Matrix {
         int ch = sc.nextInt();
         int a[][], b[][];
         int r1,c1,r2,c2 = 0;
+        sc.close();
         switch (ch) {
             case 1:
                 System.out.print("Enter the number of rows of matrix 1 : ");

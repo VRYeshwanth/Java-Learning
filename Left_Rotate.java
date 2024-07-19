@@ -3,7 +3,6 @@ public class Left_Rotate
 {
     public static void main(String[] args)
     {
-        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("How many elements : ");
         int n = 0;
@@ -30,6 +29,7 @@ public class Left_Rotate
         System.out.println("Array after "+rotations+ " left rotations :- ");
         for(int i : rotatedArray)
             System.out.print(i+ " ");
+        sc.close();
     }
 
     public static int[] rotateLeft(int[] a, int rot)
