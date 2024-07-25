@@ -68,7 +68,7 @@ public class N_Queens
         if(cols == board.length)
         {
             printBoard(board);
-            System.out.println("\n");
+            System.out.println();
             return;
         }
         for(int r = 0; r < board.length; r++)
